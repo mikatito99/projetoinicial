@@ -3,12 +3,10 @@ import java.util.Random;
 public class jogoSena {
 
 	    public static void main(String[] args) {
-	
-	 Scanner scanner = new Scanner(System.in);
+	     Scanner scanner = new Scanner(System.in);
 	    Random random = new Random();
-
-	    int[] aposta = new int[7];
-	    int[] resultado = new int[7];
+        int[] aposta = new int[7];
+	int[] resultado = new int[7];
 
 
 	    for (int i = 0; i < 7; i++) {
@@ -20,14 +18,14 @@ public class jogoSena {
 
 	    
 	    for (int i = 0; i < 7; i++) {
-	        resultado[i] = random.nextInt(101);
+	 resultado[i] = random.nextInt(101);
 	    }
-	    int acertos = 0;
-	    for (int i = 0; i < 7; i++) {
-	        for (int j = 0; j < 7; j++) {
-	            if (aposta[i] == resultado[j]) {
-	                acertos++;
-	                break;
+	 int acertos = 0;
+	for (int i = 0; i < 7; i++) {
+	for (int j = 0; j < 7; j++) {
+	        if (aposta[i] == resultado[j]) {
+	         acertos++;
+	         break;
 	            }
 	        }
 	    }
@@ -40,12 +38,10 @@ public class jogoSena {
 	    for (int num : resultado) {
 	        System.out.print(num + " ");
 	    }
-	    
-	 
-
-	    // Calculando   o premio
+	
+	    // Calcular    o premio
 	    int premio = 0;
-	    switch (acertos) {
+	    switch (acerto) {
 	        case 5:
 	            premio = 10000;
 	            break;
